@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C8CB99A-A0C5-4728-8AAA-EC50729C149A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Panapoll</RootNamespace>
+    <AssemblyName>Panapoll</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\footable.min.css" />
+    <Content Include="edithostprofile.aspx" />
+    <Content Include="edituserprofile.aspx" />
+    <Content Include="font\fonts\fontawesome-webfont.eot" />
+    <Content Include="font\fonts\fontawesome-webfont.ttf" />
+    <Content Include="font\fonts\fontawesome-webfont.woff" />
+    <Content Include="font\fonts\FontAwesome.otf" />
+    <Content Include="font\less\bordered-pulled.less" />
+    <Content Include="font\less\core.less" />
+    <Content Include="font\less\extras.less" />
+    <Content Include="font\less\fixed-width.less" />
+    <Content Include="font\less\font-awesome.less" />
+    <Content Include="font\less\icons.less" />
+    <Content Include="font\less\larger.less" />
+    <Content Include="font\less\list.less" />
+    <Content Include="font\less\mixins.less" />
+    <Content Include="font\less\path.less" />
+    <Content Include="font\less\rotated-flipped.less" />
+    <Content Include="font\less\spinning.less" />
+    <Content Include="font\less\stacked.less" />
+    <Content Include="font\less\variables.less" />
+    <Content Include="font\scss\font-awesome.scss" />
+    <Content Include="font\scss\_bordered-pulled.scss" />
+    <Content Include="font\scss\_core.scss" />
+    <Content Include="font\scss\_extras.scss" />
+    <Content Include="font\scss\_fixed-width.scss" />
+    <Content Include="font\scss\_icons.scss" />
+    <Content Include="font\scss\_larger.scss" />
+    <Content Include="font\scss\_list.scss" />
+    <Content Include="font\scss\_mixins.scss" />
+    <Content Include="font\scss\_path.scss" />
+    <Content Include="font\scss\_rotated-flipped.scss" />
+    <Content Include="font\scss\_spinning.scss" />
+    <Content Include="font\scss\_stacked.scss" />
+    <Content Include="font\scss\_variables.scss" />
+    <None Include="Properties\PublishProfiles\panapoll - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\panapoll - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="addcomp.aspx" />
+    <Content Include="assets\brand\bootstrap-outline.svg" />
+    <Content Include="assets\brand\bootstrap-punchout.svg" />
+    <Content Include="assets\brand\bootstrap-solid.svg" />
+    <Content Include="assets\css\docs.min.css" />
+    <Content Include="assets\css\ie10-viewport-bug-workaround.css" />
+    <Content Include="assets\css\src\docs.css" />
+    <Content Include="assets\css\src\pygments-manni.css" />
+    <Content Include="assets\flash\ZeroClipboard.swf" />
+    <Content Include="assets\img\components.png" />
+    <Content Include="assets\img\devices.png" />
+    <Content Include="assets\img\expo-lyft.jpg" />
+    <Content Include="assets\img\expo-newsweek.jpg" />
+    <Content Include="assets\img\expo-riot.jpg" />
+    <Content Include="assets\img\expo-vogue.jpg" />
+    <Content Include="assets\img\sass-less.png" />
+    <Content Include="assets\js\customize.min.js" />
+    <Content Include="assets\js\docs.min.js" />
+    <Content Include="assets\js\ie-emulation-modes-warning.js" />
+    <Content Include="assets\js\ie10-viewport-bug-workaround.js" />
+    <Content Include="assets\js\ie8-responsive-file-warning.js" />
+    <Content Include="assets\js\raw-files.min.js" />
+    <Content Include="assets\js\src\application.js" />
+    <Content Include="assets\js\src\customizer.js" />
+    <Content Include="assets\js\vendor\anchor.js" />
+    <Content Include="assets\js\vendor\autoprefixer.js" />
+    <Content Include="assets\js\vendor\Blob.js" />
+    <Content Include="assets\js\vendor\FileSaver.js" />
+    <Content Include="assets\js\vendor\holder.min.js" />
+    <Content Include="assets\js\vendor\jquery.min.js" />
+    <Content Include="assets\js\vendor\jszip.min.js" />
+    <Content Include="assets\js\vendor\less.min.js" />
+    <Content Include="assets\js\vendor\uglify.min.js" />
+    <Content Include="assets\js\vendor\ZeroClipboard.min.js" />
+    <Content Include="carousel.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\isotope.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="default.aspx" />
+    <Content Include="dist\css\bootstrap-theme.css" />
+    <Content Include="dist\css\bootstrap-theme.min.css" />
+    <Content Include="dist\css\bootstrap.css" />
+    <Content Include="dist\css\bootstrap.min.css" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="dist\js\bootstrap.js" />
+    <Content Include="dist\js\bootstrap.min.js" />
+    <Content Include="dist\js\framework\bootstrap.js" />
+    <Content Include="dist\js\framework\bootstrap.min.js" />
+    <Content Include="dist\js\framework\foundation.js" />
+    <Content Include="dist\js\framework\foundation.min.js" />
+    <Content Include="dist\js\framework\pure.js" />
+    <Content Include="dist\js\framework\pure.min.js" />
+    <Content Include="dist\js\framework\semantic.js" />
+    <Content Include="dist\js\framework\semantic.min.js" />
+    <Content Include="dist\js\framework\uikit.js" />
+    <Content Include="dist\js\framework\uikit.min.js" />
+    <Content Include="dist\js\language\ar_MA.js" />
+    <Content Include="dist\js\language\be_FR.js" />
+    <Content Include="dist\js\language\be_NL.js" />
+    <Content Include="dist\js\language\bg_BG.js" />
+    <Content Include="dist\js\language\ca_ES.js" />
+    <Content Include="dist\js\language\cs_CZ.js" />
+    <Content Include="dist\js\language\da_DK.js" />
+    <Content Include="dist\js\language\de_DE.js" />
+    <Content Include="dist\js\language\en_US.js" />
+    <Content Include="dist\js\language\es_CL.js" />
+    <Content Include="dist\js\language\es_ES.js" />
+    <Content Include="dist\js\language\eu_ES.js" />
+    <Content Include="dist\js\language\fa_IR.js" />
+    <Content Include="dist\js\language\fi_FI.js" />
+    <Content Include="dist\js\language\fr_FR.js" />
+    <Content Include="dist\js\language\gr_EL.js" />
+    <Content Include="dist\js\language\he_IL.js" />
+    <Content Include="dist\js\language\hi_IN.js" />
+    <Content Include="dist\js\language\hu_HU.js" />
+    <Content Include="dist\js\language\id_ID.js" />
+    <Content Include="dist\js\language\it_IT.js" />
+    <Content Include="dist\js\language\ja_JP.js" />
+    <Content Include="dist\js\language\nl_NL.js" />
+    <Content Include="dist\js\language\no_NO.js" />
+    <Content Include="dist\js\language\pl_PL.js" />
+    <Content Include="dist\js\language\pt_BR.js" />
+    <Content Include="dist\js\language\pt_PT.js" />
+    <Content Include="dist\js\language\ro_RO.js" />
+    <Content Include="dist\js\language\ru_RU.js" />
+    <Content Include="dist\js\language\sk_SK.js" />
+    <Content Include="dist\js\language\sq_AL.js" />
+    <Content Include="dist\js\language\sr_RS.js" />
+    <Content Include="dist\js\language\sv_SE.js" />
+    <Content Include="dist\js\language\th_TH.js" />
+    <Content Include="dist\js\language\tr_TR.js" />
+    <Content Include="dist\js\language\ua_UA.js" />
+    <Content Include="dist\js\language\vi_VN.js" />
+    <Content Include="dist\js\language\zh_CN.js" />
+    <Content Include="dist\js\language\zh_TW.js" />
+    <Content Include="dist\js\npm.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="font\css\font-awesome.css" />
+    <Content Include="font\css\font-awesome.min.css" />
+    <Content Include="font\fonts\fontawesome-webfont.svg" />
+    <Content Include="forum.aspx" />
+    <Content Include="hostpage.aspx" />
+    <Content Include="hostprofile.aspx" />
+    <Content Include="images\11.jpg" />
+    <Content Include="images\12.jpg" />
+    <Content Include="images\13.jpg" />
+    <Content Include="images\14.jpg" />
+    <Content Include="images\15.jpg" />
+    <Content Include="images\16.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\7.jpg" />
+    <Content Include="images\8.jpg" />
+    <Content Include="images\9.jpg" />
+    <Content Include="images\background_img.jpg" />
+    <Content Include="images\banner-bg.jpg" />
+    <Content Include="images\carousel_1.jpg" />
+    <Content Include="images\carousel_2.jpg" />
+    <Content Include="images\carousel_3.jpg" />
+    <Content Include="images\carousel_4.jpg" />
+    <Content Include="images\carousel_5.jpg" />
+    <Content Include="images\dots.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\feat_host.jpg" />
+    <Content Include="images\feat_photo.jpg" />
+    <Content Include="images\feat_vote.jpg" />
+    <Content Include="images\img1.jpg" />
+    <Content Include="images\img2.jpg" />
+    <Content Include="images\img3.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\panapoll.png" />
+    <Content Include="images\vote.jpg" />
+    <Content Include="js\Backstretch.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\footable.min.js" />
+    <Content Include="js\jquery-1.8.2.min.js" />
+    <Content Include="js\jquery.countdown.js" />
+    <Content Include="js\jquery.fittext.js" />
+    <Content Include="js\jquery.nav.js" />
+    <Content Include="js\modernizr-latest.js" />
+    <Content Include="js\waypoints.js" />
+    <Content Include="livecomp.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="dist\css\bootstrap-theme.css.map" />
+    <Content Include="dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="dist\css\bootstrap.css.map" />
+    <Content Include="dist\css\bootstrap.min.css.map" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\css\docs.min.css.map" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="prevcomp.aspx" />
+    <Content Include="registration.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="signin.css" />
+    <Content Include="userpage.aspx" />
+    <Content Include="userprofile.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addcomp.aspx.cs">
+      <DependentUpon>addcomp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addcomp.aspx.designer.cs">
+      <DependentUpon>addcomp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edithostprofile.aspx.cs">
+      <DependentUpon>edithostprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edithostprofile.aspx.designer.cs">
+      <DependentUpon>edithostprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edituserprofile.aspx.cs">
+      <DependentUpon>edituserprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edituserprofile.aspx.designer.cs">
+      <DependentUpon>edituserprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forum.aspx.cs">
+      <DependentUpon>forum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forum.aspx.designer.cs">
+      <DependentUpon>forum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hostpage.aspx.cs">
+      <DependentUpon>hostpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hostpage.aspx.designer.cs">
+      <DependentUpon>hostpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hostprofile.aspx.cs">
+      <DependentUpon>hostprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hostprofile.aspx.designer.cs">
+      <DependentUpon>hostprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="livecomp.aspx.cs">
+      <DependentUpon>livecomp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="livecomp.aspx.designer.cs">
+      <DependentUpon>livecomp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="prevcomp.aspx.cs">
+      <DependentUpon>prevcomp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="prevcomp.aspx.designer.cs">
+      <DependentUpon>prevcomp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registration.aspx.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registration.aspx.designer.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userpage.aspx.cs">
+      <DependentUpon>userpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userpage.aspx.designer.cs">
+      <DependentUpon>userpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userprofile.aspx.cs">
+      <DependentUpon>userprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userprofile.aspx.designer.cs">
+      <DependentUpon>userprofile.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>27274</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:27274/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
