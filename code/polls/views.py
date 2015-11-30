@@ -18,36 +18,25 @@ def home(request):
             'title':'Home',
         })
     )
-def contact(request):
-    """Renders the contact page."""
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/contact.html',
-        context_instance = RequestContext(request,
-        {
-            'title':'Contact',
-            'message':'Your contact page.',
-        })
-    )
 
-def about(request):
-    """Renders the about page."""
+def About(request):
+    """Renders the home page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/about.html',
+        'app/index.html',
         context_instance = RequestContext(request,
         {
             'title':'About',
-            'message':'Your application description page.',
         })
     )
+
+
 
 def register(request):
 
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = BootstrapRegistrationForm(request.POST)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/login/')
